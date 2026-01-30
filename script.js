@@ -82,7 +82,7 @@ if (payYearlyBtn) {
    AUTH BASED NAVBAR
 ================================ */
 
-import { onAuthChange, logout } from "./firebase/auth.js";
+import { onUserChange, logoutUser } from "./firebase/auth.js";
 
 const navAuth = document.getElementById("navAuth");
 const mobileAuth = document.getElementById("mobileAuth");
@@ -131,7 +131,7 @@ async function handleLogout() {
 }
 
 // Firebase auth listener
-onAuthChange((user) => {
+onUserChange((user) => {
   if (user) {
     renderLoggedIn(user);
   } else {

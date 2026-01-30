@@ -1,3 +1,15 @@
+/* ===============================
+   MOBILE TEXT SCALING FIX
+================================ */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 16px;
+  /* FORCE base size */
+}
+
+
 :root {
   --bg: #070b16;
   --panel: #0b1220;
@@ -179,4 +191,70 @@ select.input option[value=""] {
 select.input option {
   background: #0b1220;
   color: #e8eeff;
+}
+
+/* ===============================
+   MOBILE AUTH CARD – FULL FIX
+================================ */
+
+
+
+/* 🔥 Stop vertical centering on mobile */
+@media (max-width: 520px) {
+  body {
+    margin: 0;
+    padding: 20px 16px;
+    display: block;
+    min-height: 100vh;
+  }
+}
+
+
+
+/* Make card feel full-size */
+.authCard {
+  max-width: 80%;
+  min-height: fit-content;
+  padding: 26px 20px;
+  border-radius: 22px;
+}
+
+@media (max-width: 520px) {
+
+  .authCard {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .authTitle {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .authSub {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .form {
+    gap: 18px;
+  }
+
+  .input {
+    font-size: 16px;
+    /* 👈 THIS IS KEY */
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
 }

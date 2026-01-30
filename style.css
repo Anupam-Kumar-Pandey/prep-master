@@ -34,6 +34,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+  width: 100%;
+
 }
 
 body {
@@ -45,7 +48,6 @@ body {
   background: transparent;
 
   color: var(--text);
-  overflow-x: hidden;
 }
 
 a {
@@ -375,7 +377,7 @@ a {
 
 .hero__bg {
   position: absolute;
-  inset: -60px -60px auto -60px;
+  inset: -40px -20px auto -20px;
   height: 420px;
   background:
     radial-gradient(700px 280px at 25% 40%, rgba(109, 94, 252, .28), transparent 70%),
@@ -384,7 +386,16 @@ a {
   filter: blur(20px);
   pointer-events: none;
   opacity: .9;
+  max-width: 100vw;
+  overflow: hidden;
 }
+
+@media (max-width: 600px) {
+  .hero__bg {
+    inset: -20px -10px auto -10px;
+  }
+}
+
 
 .hero__inner {
   position: relative;
@@ -1247,17 +1258,23 @@ a {
 }
 
 /* ===============================
-   MOBILE MENU FIX (Hamburger + X)
+   MOBILE MENU (CORRECT)
 ================================ */
 
-/* Always keep mobile menu hidden by default */
+/* Hidden by default (desktop) */
 .mobile {
-  display: none !important;
+  display: none;
 }
 
-/* Only show when open */
-.mobile.open {
-  display: block !important;
+/* Show only on mobile screens */
+@media (max-width: 980px) {
+  .mobile {
+    display: none;
+  }
+
+  .mobile.open {
+    display: block;
+  }
 }
 
 /* Hamburger -> X animation */
@@ -1293,4 +1310,17 @@ a {
 
 section[id] {
   scroll-margin-top: var(--scroll-offset);
+}
+
+.pageWrap {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.hero,
+.topbar,
+.nav {
+  max-width: 100%;
+  overflow: hidden;
 }
