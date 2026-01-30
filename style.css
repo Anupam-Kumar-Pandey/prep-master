@@ -46,7 +46,6 @@ body {
 
   /* ✅ IMPORTANT: keep body transparent so html background looks continuous */
   background: transparent;
-
   color: var(--text);
 }
 

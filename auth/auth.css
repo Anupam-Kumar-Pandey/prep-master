@@ -10,6 +10,8 @@ html {
 }
 
 
+
+
 :root {
   --bg: #070b16;
   --panel: #0b1220;
@@ -213,7 +215,7 @@ select.input option {
 
 /* Make card feel full-size */
 .authCard {
-  max-width: 80%;
+  max-width: 70%;
   min-height: fit-content;
   padding: 26px 20px;
   border-radius: 22px;
@@ -252,6 +254,35 @@ select.input option {
   .btn {
     font-size: 16px;
     padding: 16px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+/* ===== MOBILE READABILITY FIX ===== */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .authTitle {
+    font-size: 22px;
+  }
+
+  .authSub {
+    font-size: 15px;
+  }
+
+  .input {
+    font-size: 16px;
+    /* 👈 MUST BE 16px on mobile */
+  }
+
+  .btn {
+    font-size: 16px;
   }
 
   .link {
