@@ -1,0 +1,51 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<html>
+  <head>
+    <title>Login | PrepMaster</title>
+    <link rel="stylesheet" href="./auth/auth.css" />
+  </head>
+  <body>
+    <div class="authCard">
+      <div class="authTitle">Login</div>
+      <div class="authSub">Access your student dashboard</div>
+
+      <form class="form" id="loginForm">
+        <input
+          class="input"
+          id="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          class="input"
+          id="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <button class="btn">Login</button>
+      </form>
+
+      <div class="link">
+        <a href="#" id="reset">Forgot password?</a>
+      </div>
+
+      <div class="link">
+        New student? <a href="./signup.html">Create account</a>
+      </div>
+    </div>
+
+    <script type="module" src="./auth/auth.js">
+            import { watchAuthState } from "./firebase/auth.js";
+
+      watchAuthState((user) => {
+        if (user) {
+          window.location.href = "./dashboard.html";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,829 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepMaster | Youth Test Series (Class 6–10)</title>
+
+    <meta
+      name="description"
+      content="PrepMaster Youth Test Series for Class 6–10. Weekly Maths + Science tests, practice sheets, solutions, and results. Affordable monthly and yearly plans."
+    />
+    <meta name="theme-color" content="#0b1220" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    
+      <!-- Top Notice Bar -->
+      <div class="topbar">
+        <div class="container topbar__inner">
+          <div class="topbar__left">
+            <span class="dot"></span>
+            <span>Admissions Open • Class 6–10 • Maths + Science</span>
+          </div>
+          <!-- <div class="topbar__right">
+          <a class="topbar__link" href="#pricing">Plans</a>
+          <a class="topbar__link" href="#how">How it works</a>
+          <a class="topbar__link" href="#faq">FAQ</a>
+        </div> -->
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <header class="nav">
+        <div class="container nav__inner">
+          <a href="#" class="brand">
+            <div class="brand__logo">PM</div>
+            <div class="brand__text">
+              <div class="brand__name">PrepMaster</div>
+              <div class="brand__tag">Youth Test Series • Class 6–10</div>
+            </div>
+          </a>
+
+          <nav class="nav__links">
+            <a href="#demo">Free Demo</a>
+            <a href="#features">Benefits</a>
+            <a href="#pricing">Plans</a>
+            <a href="#results">Result System</a>
+            <a href="#contact">Contact</a>
+            <a href="#how">How it works</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <div class="nav__cta">
+  <!-- Logged OUT -->
+  <a id="navLogin" class="btn btn--ghost" href="./login.html">Login</a>
+  <a id="navSignup" class="btn btn--primary btnGlow" href="./signup.html">Sign Up</a>
+
+  <!-- Logged IN -->
+  <a id="navDashboard" class="btn btn--ghost" href="./dashboard.html" style="display:none;">
+    Dashboard
+  </a>
+  <button id="navLogout" class="btn btn--primary btnGlow" style="display:none;">
+    Logout
+  </button>
+</div>
+
+
+          <button class="nav__burger" id="burger" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile" id="mobileMenu">
+          <div class="container mobile__inner">
+            <a href="#demo" class="mobile__link">Free Demo</a>
+            <a href="#features" class="mobile__link">Benefits</a>
+            <a href="#how" class="mobile__link">How it works</a>
+            <a href="#pricing" class="mobile__link">Pricing</a>
+            <a href="#results" class="mobile__link">Result System</a>
+            <a href="#faq" class="mobile__link">FAQ</a>
+            <a href="#contact" class="mobile__link">Contact</a>
+            <div class="mobile__cta">
+  <!-- Logged OUT -->
+  <a id="mLogin" class="btn btn--ghost w-full" href="./login.html">Login</a>
+  <a id="mSignup" class="btn btn--primary w-full btnGlow" href="./signup.html">Sign Up</a>
+
+  <!-- Logged IN -->
+  <a id="mDashboard" class="btn btn--ghost w-full" href="./dashboard.html" style="display:none;">
+    Dashboard
+  </a>
+  <button id="mLogout" class="btn btn--primary w-full btnGlow" style="display:none;">
+    Logout
+  </button>
+</div>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="pageWrap"></div>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="container hero__inner">
+          <div class="hero__left">
+            <div class="pill">
+              <span class="pill__badge">NEW</span>
+              <span class="pill__text"
+                >Weekly Test + Practice + Result System</span
+              >
+            </div>
+
+            <h1 class="hero__title">
+              Make your child <span class="grad">Topper-ready</span> with weekly
+              <span class="grad2">Maths + Science</span> tests.
+            </h1>
+
+            <p class="hero__subtitle">
+              PrepMaster Youth Test Series is designed for Class 6–10 students
+              to build discipline, speed, accuracy, and exam confidence through
+              a structured weekly system.
+            </p>
+
+            <div class="hero__stats">
+              <div class="stat hoverLift">
+                <div class="stat__num">8</div>
+                <div class="stat__label">Tests/month</div>
+              </div>
+              <div class="stat hoverLift">
+                <div class="stat__num">2</div>
+                <div class="stat__label">Subjects</div>
+              </div>
+              <div class="stat hoverLift">
+                <div class="stat__num">30</div>
+                <div class="stat__label">Practice Qs/week</div>
+              </div>
+            </div>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg btnGlow" href="#demo"
+                >Attempt Free Demo</a
+              >
+              <a
+                class="btn btn--ghost btn--lg"
+                target="_blank"
+                href="https://wa.me/918303223834"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <div class="hero__trust">
+              <div class="trust__item hoverSoft">
+                Sunday Test • Monday Result
+              </div>
+              <div class="trust__item hoverSoft">Affordable Plans</div>
+              <div class="trust__item hoverSoft">Parent Updates</div>
+            </div>
+          </div>
+
+          <div class="hero__right">
+            <div class="glassCard hoverShine">
+              <div class="glassCard__top">
+                <div class="glassCard__title">Quick Start</div>
+                <div class="glassCard__sub">Follow this exact flow</div>
+              </div>
+
+              <div class="steps">
+                <div class="step">
+                  <div class="step__icon">1</div>
+                  <div class="step__content">
+                    <div class="step__title">Fill Enquiry Form</div>
+                    <div class="step__desc">
+                      Get demo test access instantly.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step__icon">2</div>
+                  <div class="step__content">
+                    <div class="step__title">Attempt Demo Test</div>
+                    <div class="step__desc">
+                      Class-wise demo to build trust.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step__icon">3</div>
+                  <div class="step__content">
+                    <div class="step__title">Enroll + Pay</div>
+                    <div class="step__desc">
+                      Upload payment screenshot in form.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="step__icon">4</div>
+                  <div class="step__content">
+                    <div class="step__title">Join WhatsApp Group</div>
+                    <div class="step__desc">
+                      Receive lectures, sheets, tests & results.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glassCard__cta">
+                <a
+                  class="btn btn--primary w-full btnGlow"
+                  target="_blank"
+                  href="https://forms.gle/J2w9pXG5TEdSyN8M6"
+                >
+                  Enroll Now (Paid)
+                </a>
+                <a
+                  class="btn btn--ghost w-full"
+                  target="_blank"
+                  href="https://forms.gle/hmos1zLDB4AfTy9L6"
+                >
+                  Get Free Demo Link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo -->
+      <section class="section" id="demo">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">Free Demo Test (Class-wise)</h2>
+            <p class="sectionDesc">
+              Choose your class and attempt the demo test. Class 6 demo is
+              active now. Other class demo tests will be added soon.
+            </p>
+          </div>
+
+          <div class="grid grid--5">
+            <a
+              class="demoCard active hoverShine"
+              target="_blank"
+              href="https://forms.gle/YCVZjiEkPE6jWEnw5"
+            >
+              <div class="demoCard__top">
+                <div class="demoCard__class">Class 6</div>
+                <div class="badge badge--ok">LIVE</div>
+              </div>
+              <div class="demoCard__title">Demo Test</div>
+              <div class="demoCard__meta">Maths + Science • 10 Marks</div>
+              <div class="demoCard__btn">Start Now</div>
+            </a>
+
+            <div class="demoCard locked hoverShine">
+              <div class="demoCard__top">
+                <div class="demoCard__class">Class 7</div>
+                <div class="badge badge--soon">SOON</div>
+              </div>
+              <div class="demoCard__title">Demo Test</div>
+              <div class="demoCard__meta">Link will be added</div>
+              <div class="demoCard__btn">Coming Soon</div>
+            </div>
+
+            <div class="demoCard locked hoverShine">
+              <div class="demoCard__top">
+                <div class="demoCard__class">Class 8</div>
+                <div class="badge badge--soon">SOON</div>
+              </div>
+              <div class="demoCard__title">Demo Test</div>
+              <div class="demoCard__meta">Link will be added</div>
+              <div class="demoCard__btn">Coming Soon</div>
+            </div>
+
+            <div class="demoCard locked hoverShine">
+              <div class="demoCard__top">
+                <div class="demoCard__class">Class 9</div>
+                <div class="badge badge--soon">SOON</div>
+              </div>
+              <div class="demoCard__title">Demo Test</div>
+              <div class="demoCard__meta">Link will be added</div>
+              <div class="demoCard__btn">Coming Soon</div>
+            </div>
+
+            <div class="demoCard locked hoverShine">
+              <div class="demoCard__top">
+                <div class="demoCard__class">Class 10</div>
+                <div class="badge badge--soon">SOON</div>
+              </div>
+              <div class="demoCard__title">Demo Test</div>
+              <div class="demoCard__meta">Link will be added</div>
+              <div class="demoCard__btn">Coming Soon</div>
+            </div>
+          </div>
+
+          <div class="ctaStrip hoverShine">
+            <div class="ctaStrip__left">
+              <div class="ctaStrip__title">
+                Want demo test link on WhatsApp?
+              </div>
+              <div class="ctaStrip__desc">
+                Fill enquiry form and we’ll guide you personally.
+              </div>
+            </div>
+            <div class="ctaStrip__right">
+              <a
+                class="btn btn--primary btnGlow"
+                target="_blank"
+                href="https://forms.gle/hmos1zLDB4AfTy9L6"
+                >Fill Enquiry Form</a
+              >
+              <a
+                class="btn btn--ghost"
+                target="_blank"
+                href="https://wa.me/918303223834"
+                >WhatsApp Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section section--alt" id="features">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">Why PrepMaster works</h2>
+            <p class="sectionDesc">
+              Not just “online study”. This is a disciplined weekly system
+              designed for results.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">📌</div>
+              <div class="featureCard__title">Weekly Discipline</div>
+              <div class="featureCard__desc">
+                Fixed weekly lectures, practice sheet, and Sunday test.
+              </div>
+            </div>
+
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">🧠</div>
+              <div class="featureCard__title">Smart Practice</div>
+              <div class="featureCard__desc">
+                30-question practice sheet to build speed and accuracy.
+              </div>
+            </div>
+
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">📝</div>
+              <div class="featureCard__title">Exam Confidence</div>
+              <div class="featureCard__desc">
+                Regular testing reduces fear and improves performance.
+              </div>
+            </div>
+
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">📈</div>
+              <div class="featureCard__title">Progress Tracking</div>
+              <div class="featureCard__desc">
+                Practice submission tracking keeps students consistent.
+              </div>
+            </div>
+
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">🏆</div>
+              <div class="featureCard__title">Result System</div>
+              <div class="featureCard__desc">
+                Weekly results and improvement focus for parents.
+              </div>
+            </div>
+
+            <div class="featureCard hoverShine">
+              <div class="featureCard__icon">💬</div>
+              <div class="featureCard__title">Parent Friendly</div>
+              <div class="featureCard__desc">
+                WhatsApp-based support and updates for easy access.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section" id="how">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">How it works (Weekly System)</h2>
+            <p class="sectionDesc">
+              Simple process. Easy for students. Powerful for results.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeItem hoverShine">
+              <div class="timeItem__day">Monday</div>
+              <div class="timeItem__content">
+                <div class="timeItem__title">Lecture Links</div>
+                <div class="timeItem__desc">
+                  1 Maths + 1 Science lecture link shared.
+                </div>
+              </div>
+            </div>
+
+            <div class="timeItem hoverShine">
+              <div class="timeItem__day">Wednesday</div>
+              <div class="timeItem__content">
+                <div class="timeItem__title">Practice Sheet</div>
+                <div class="timeItem__desc">
+                  30 questions practice sheet shared in group.
+                </div>
+              </div>
+            </div>
+
+            <div class="timeItem hoverShine">
+              <div class="timeItem__day">Friday</div>
+              <div class="timeItem__content">
+                <div class="timeItem__title">Practice Submission</div>
+                <div class="timeItem__desc">
+                  Student uploads PDF solutions for tracking.
+                </div>
+              </div>
+            </div>
+
+            <div class="timeItem hoverShine">
+              <div class="timeItem__day">Sunday</div>
+              <div class="timeItem__content">
+                <div class="timeItem__title">Live Test + Submission</div>
+                <div class="timeItem__desc">
+                  Objective answers + PDF submission for copy checking.
+                </div>
+              </div>
+            </div>
+
+            <div class="timeItem hoverShine">
+              <div class="timeItem__day">Monday</div>
+              <div class="timeItem__content">
+                <div class="timeItem__title">Result Declaration</div>
+                <div class="timeItem__desc">
+                  Result shared after checking. Improvement focus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section section--alt" id="pricing">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">Plans & Pricing</h2>
+            <p class="sectionDesc">
+              Choose monthly flexibility or yearly best value.
+            </p>
+          </div>
+
+          <div class="payBlock" id="pay">
+            <div class="payBlock__left">
+              <div class="payBlock__title">Choose Plan & Pay</div>
+              <div class="payBlock__desc">
+                After payment, please fill the Enrollment Form and upload
+                screenshot for verification.
+              </div>
+
+              <div class="payGrid">
+                <!-- Monthly -->
+                <div class="payCard hoverShine">
+                  <div class="payCard__top">
+                    <div class="payCard__plan">Monthly Plan</div>
+                    <div class="payCard__price">₹250</div>
+                  </div>
+
+                  <ul class="payList">
+                    <li>Weekly Maths + Science tests</li>
+                    <li>Practice sheet every week</li>
+                    <li>Sunday test + results</li>
+                    <li>WhatsApp group support</li>
+                    <li>Renew every month</li>
+                  </ul>
+
+                  <div class="payCard__actions">
+                    <button
+                      class="btn btn--primary w-full btnGlow"
+                      id="payMonthlyBtn"
+                    >
+                      Direct Pay ₹250
+                    </button>
+
+                    <a
+                      class="btn btn--ghost w-full"
+                      target="_blank"
+                      href="https://forms.gle/J2w9pXG5TEdSyN8M6"
+                    >
+                      Fill Enrollment Form
+                    </a>
+
+                    <a
+                      class="btn btn--ghost w-full"
+                      target="_blank"
+                      href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+                    >
+                      Talk to a Mentor
+                    </a>
+                  </div>
+
+                  <div class="payCard__upiNote">
+                    Opens UPI app with payment details.
+                  </div>
+                </div>
+
+                <!-- Yearly -->
+                <div class="payCard payCard--best hoverShine">
+                  <div class="bestTag">BEST VALUE</div>
+
+                  <div class="payCard__top payCard__top--yearly">
+                    <div class="payCard__plan">Yearly Plan</div>
+                    <div class="payCard__price">₹2400</div>
+                  </div>
+
+                  <div class="saveLine">Save ₹600 vs monthly plan</div>
+
+                  <ul class="payList">
+                    <li>All Monthly Plan benefits</li>
+                    <li>Cheaper than monthly plan</li>
+                    <li>Priority doubt support</li>
+                    <li>Structured content access</li>
+                    <li>No renewal stress</li>
+                  </ul>
+
+                  <div class="payCard__actions">
+                    <button
+                      class="btn btn--primary w-full btnGlow"
+                      id="payYearlyBtn"
+                    >
+                      Direct Pay ₹2400
+                    </button>
+
+                    <a
+                      class="btn btn--ghost w-full"
+                      target="_blank"
+                      href="https://forms.gle/J2w9pXG5TEdSyN8M6"
+                    >
+                      Fill Enrollment Form
+                    </a>
+
+                    <a
+                      class="btn btn--ghost w-full"
+                      target="_blank"
+                      href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+                    >
+                      Talk to a Mentor
+                    </a>
+                  </div>
+
+                  <div class="payCard__upiNote">
+                    Opens UPI app with payment details.
+                  </div>
+                </div>
+              </div>
+
+              <div class="payBlock__footer">
+                <div class="miniNote hoverSoft">
+                  Note: WhatsApp group access within 2–6 hours after
+                  verification.
+                </div>
+              </div>
+            </div>
+
+            <div class="payBlock__right">
+              <div class="secureBox hoverShine">
+                <div class="secureBox__title">Admission Support</div>
+                <div class="secureBox__desc">
+                  Parents can also contact us on WhatsApp to get full guidance
+                  for enrollment.
+                </div>
+
+                <div class="securePoints">
+                  <div class="securePoint">✔ Plan selection guidance</div>
+                  <div class="securePoint">✔ Payment help</div>
+                  <div class="securePoint">✔ Group access confirmation</div>
+                  <div class="securePoint">✔ Doubt support (Yearly plan)</div>
+                </div>
+
+                <div class="secureBox__actions">
+                  <a
+                    class="btn btn--primary w-full btnGlow"
+                    target="_blank"
+                    href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+                  >
+                    WhatsApp for Admission
+                  </a>
+
+                  <a
+                    class="btn btn--ghost w-full"
+                    target="_blank"
+                    href="https://forms.gle/hmos1zLDB4AfTy9L6"
+                  >
+                    Fill Enquiry Form
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results -->
+      <section class="section" id="results">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">Result System (Parent Friendly)</h2>
+            <p class="sectionDesc">
+              Transparent results, structured improvement, and consistent weekly
+              evaluation.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="resultCard hoverShine">
+              <div class="resultCard__title">
+                Objective + Subjective Evaluation
+              </div>
+              <div class="resultCard__desc">
+                Students submit objective answers + PDF solution for checking.
+                This ensures real learning.
+              </div>
+              <div class="resultCard__points">
+                <div class="point">✔ Objective score tracking</div>
+                <div class="point">✔ Copy checking for written work</div>
+                <div class="point">✔ Total marks declared</div>
+              </div>
+            </div>
+
+            <div class="resultCard hoverShine">
+              <div class="resultCard__title">Weekly Improvement Focus</div>
+              <div class="resultCard__desc">
+                We focus on accuracy, speed, and consistency. Parents can see
+                progress every week.
+              </div>
+              <div class="resultCard__points">
+                <div class="point">✔ Practice submission tracking</div>
+                <div class="point">✔ Regular test discipline</div>
+                <div class="point">✔ Strong exam preparation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--alt" id="faq">
+        <div class="container">
+          <div class="sectionHead">
+            <h2 class="sectionTitle">Frequently Asked Questions</h2>
+            <p class="sectionDesc">Clear answers for parents and students.</p>
+          </div>
+
+          <div class="faq">
+            <button class="faqItem hoverSoft">
+              <div class="faqItem__q">How will enrollment happen?</div>
+              <div class="faqItem__a">
+                Fill the Enrollment Form, pay using UPI, upload screenshot, and
+                after verification we add you to WhatsApp group.
+              </div>
+            </button>
+
+            <button class="faqItem hoverSoft">
+              <div class="faqItem__q">
+                Is this a full coaching or test series?
+              </div>
+              <div class="faqItem__a">
+                This is a structured weekly system: lectures + practice sheet +
+                test + result. It builds discipline and marks improvement.
+              </div>
+            </button>
+
+            <button class="faqItem hoverSoft">
+              <div class="faqItem__q">What if student misses Sunday test?</div>
+              <div class="faqItem__a">
+                Students should attempt weekly tests. Missed tests reduce
+                performance tracking. We encourage consistency.
+              </div>
+            </button>
+
+            <button class="faqItem hoverSoft">
+              <div class="faqItem__q">Can parents contact on WhatsApp?</div>
+              <div class="faqItem__a">
+                Yes. Parents can contact directly for enrollment support,
+                renewals, and plan details.
+              </div>
+            </button>
+
+            <button class="faqItem hoverSoft">
+              <div class="faqItem__q">What is yearly plan extra benefit?</div>
+              <div class="faqItem__a">
+                Yearly plan is cheaper, has priority doubt support, and
+                structured content access.
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contactCard hoverShine">
+            <div class="contactCard__left">
+              <h3 class="contactCard__title">Ready to start?</h3>
+              <p class="contactCard__desc">
+                Fill enquiry form for demo test or enroll directly to join
+                weekly test series.
+              </p>
+
+              <div class="contactCard__actions">
+                <a
+                  class="btn btn--primary btnGlow"
+                  target="_blank"
+                  href="https://forms.gle/J2w9pXG5TEdSyN8M6"
+                  >Enroll Now</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  target="_blank"
+                  href="https://forms.gle/hmos1zLDB4AfTy9L6"
+                  >Get Demo Link</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  target="_blank"
+                  href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+                >
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="contactCard__right">
+              <div class="contactInfo">
+                <div class="contactInfo__item">
+                  <div class="contactInfo__label">WhatsApp</div>
+                  <div class="contactInfo__value">+91 8303223834</div>
+                </div>
+                <div class="contactInfo__item">
+                  <div class="contactInfo__label">Classes</div>
+                  <div class="contactInfo__value">6 to 10</div>
+                </div>
+                <div class="contactInfo__item">
+                  <div class="contactInfo__label">Subjects</div>
+                  <div class="contactInfo__value">Maths + Science</div>
+                </div>
+                <div class="contactInfo__item">
+                  <div class="contactInfo__label">Location</div>
+                  <div class="contactInfo__value">Nilmatha • Lucknow</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <div class="brand brand--footer">
+              <div class="brand__logo">PM</div>
+              <div class="brand__text">
+                <div class="brand__name">PrepMaster</div>
+                <div class="brand__tag">Youth Test Series • Class 6–10</div>
+              </div>
+            </div>
+            <p class="footer__note">
+              Designed for disciplined weekly improvement through tests,
+              practice, and results.
+            </p>
+          </div>
+
+          <div class="footer__right">
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a
+              target="_blank"
+              href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="container footer__bottom">
+          <div>© <span id="year"></span> PrepMaster. All rights reserved.</div>
+          <div class="footer__mini">
+            <span>Made for parents • Built for results</span>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Floating WhatsApp -->
+      <a
+        class="waFloat hoverSoft"
+        target="_blank"
+        href="https://wa.me/918303223834?text=Hello%20Sir%F0%9F%98%8A%20,%20I%20want%20to%20fill%20the%20%20%20enrollment%20form."
+        aria-label="WhatsApp"
+      >
+        <span class="waFloat__dot"></span>
+        WhatsApp
+      </a>
+
+      <script type="module" src="./script.js"></script>
+    </div>
+  </body>
+</html>

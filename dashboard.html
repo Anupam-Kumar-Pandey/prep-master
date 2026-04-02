@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | PrepMaster</title>
+
+    <!-- Landing page base -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="dashNav">
+      <div class="dashNav__logo">
+        <!-- SAME LOGO AS LANDING PAGE -->
+        <a href="#" class="brand">
+          <div class="brand__logo">PM</div>
+          <div class="brand__text">
+            <div class="brand__name">PrepMaster</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="dashNav__actions">
+        <a href="./index.html" class="textBtn">Home</a>
+        <button id="logoutBtn" class="textBtn danger">Logout</button>
+      </div>
+    </header>
+
+    <!-- MAIN DASHBOARD -->
+    <main class="dash">
+      <!-- WELCOME -->
+      <section class="welcome glass">
+        <h1 id="studentName">Welcome 👋</h1>
+        <p id="studentMeta">Class • Subjects</p>
+
+        <div class="planInfo" id="planInfo">
+          <span id="planStatus">🔒 Plan inactive</span>
+          <!-- <button class="upgradeBtn" id="upgradeBtn">Upgrade</button> -->
+        </div>
+      </section>
+
+      <!-- LOCK NOTICE -->
+      <section class="lockNotice glass" id="lockNotice">
+        <h2>Your learning is locked</h2>
+        <p>
+          Activate a plan to access weekly lectures, practice sheets, test
+          attempts and results.
+        </p>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="roadmap">
+        <h2>Your Learning Roadmap</h2>
+
+        <!-- SUBJECT TABS -->
+        <div class="subjectTabs" id="subjectTabs">
+          <button class="tabBtn active" data-subject="maths">Maths</button>
+          <button class="tabBtn" data-subject="science">Science</button>
+        </div>
+
+        <!-- WEEKS LOAD HERE -->
+        <div id="weeksContainer"></div>
+      </section>
+
+      <!-- UPGRADE -->
+      <section class="upgrade glass" id="upgradeSection">
+        <h2>Unlock PrepMaster</h2>
+        <p class="upgradeSubtitle">
+          Choose a plan to continue your learning journey
+        </p>
+
+        <div class="plans">
+          <!-- ================= MONTHLY PLAN ================= -->
+          <div class="planCard">
+            <div class="cardGlow"></div>
+
+            <div class="cardInner">
+              <h3>Monthly Plan</h3>
+
+              <p class="price">₹250 <span>/ month</span></p>
+
+              <ul class="planFeatures">
+                <li>✔ Maths & Science access</li>
+                <li>✔ Class-wise weekly content</li>
+                <li>✔ Practice sheets</li>
+                <li>✔ Weekly tests</li>
+                <li>✔ Recorded lectures</li>
+              </ul>
+
+              <a
+                href="upi://pay?pa=anupamkp123@okhdfcbank&pn=PrepMaster&am=250&cu=INR&tn=Monthly%20Plan%20-%20PrepMaster"
+                class="payBtn"
+              >
+                Pay ₹250 via UPI
+              </a>
+            </div>
+          </div>
+
+          <!-- ================= YEARLY PLAN ================= -->
+          <div class="planCard highlight">
+            <div class="cardGlow"></div>
+
+            <div class="cardInner">
+              <div class="badge">Best Value</div>
+
+              <h3>Yearly Plan</h3>
+
+              <p class="price">₹2400 <span>/ year</span></p>
+
+              <ul class="planFeatures">
+                <li>✔ Full syllabus coverage</li>
+                <li>✔ Maths & Science (entire year)</li>
+                <li>✔ Priority copy checking</li>
+                <li>✔ Dedicated academic support</li>
+                <li>✔ Save ₹600 annually</li>
+              </ul>
+
+              <a
+                href="upi://pay?pa=anupamkp123@okhdfcbank&pn=PrepMaster&am=2400&cu=INR&tn=Yearly%20Plan%20-%20PrepMaster"
+                class="payBtn glow"
+              >
+                Pay ₹2400 via UPI
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top: 16px; font-size: 13px; opacity: 0.7">
+          * UPI payments work best on mobile devices (GPay, PhonePe, Paytm).
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="./dashboard.js"></script>
+    <!-- <script type="module">
+      import { protectPage } from "./firebase/guard.js";
+      protectPage();
+    </script> -->
+  </body>
+</html>

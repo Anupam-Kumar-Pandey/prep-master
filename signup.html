@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sign Up | PrepMaster</title>
+    <link rel="stylesheet" href="./auth/auth.css" />
+  </head>
+  <body>
+    <div class="authCard">
+      <div class="authTitle">Create Student Account</div>
+      <div class="authSub">For Class 6–10 weekly test series</div>
+
+      <form class="form" id="signupForm">
+        <!-- Student Info -->
+        <input
+          class="input"
+          id="studentName"
+          placeholder="Student Full Name"
+          required
+        />
+
+        <select class="input" id="studentClass" required>
+          <option value="">Select Class</option>
+          <option value="6">Class 6</option>
+          <option value="7">Class 7</option>
+          <option value="8">Class 8</option>
+          <option value="9">Class 9</option>
+          <option value="10">Class 10</option>
+        </select>
+
+        <input class="input" id="school" placeholder="School Name" />
+
+        <input class="input" id="city" placeholder="City" />
+
+        <!-- Parent Info -->
+        <input
+          class="input"
+          id="parentName"
+          placeholder="Parent Name"
+          required
+        />
+
+        <input
+          class="input"
+          id="parentPhone"
+          placeholder="Parent Phone Number (Calls)"
+          required
+          pattern="[0-9]{10}"
+          title="Enter 10 digit phone number"
+        />
+
+        <input
+          class="input"
+          id="parentWhatsapp"
+          placeholder="Parent WhatsApp Number"
+          required
+          pattern="[0-9]{10}"
+          title="Enter 10 digit WhatsApp number"
+        />
+
+        <!-- Account Info -->
+        <input
+          class="input"
+          id="email"
+          type="email"
+          placeholder="Email (Login ID)"
+          required
+        />
+
+        <input
+          class="input"
+          id="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+
+        <button class="btn">Create Account</button>
+      </form>
+
+      <div class="link">
+        Already registered? <a href="./login.html">Login</a>
+      </div>
+    </div>
+
+    <script type="module" src="./auth/auth.js">
+            import { watchAuthState } from "./firebase/auth.js";
+
+      watchAuthState((user) => {
+        if (user) {
+          window.location.href = "./dashboard.html";
+        }
+      });
+    </script>
+  </body>
+</html>
